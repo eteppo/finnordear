@@ -1,0 +1,20 @@
+Package: finnordear
+Title: Finnish Nordea Bank Data Analysis Tools
+Version: 0.1.0.9000
+Authors@R: person("Eero", "Teppo", email = "eero.teppo@protonmail.com", role = c("aut", "cre"))
+Description: Simple tools to help you analyze your Finnish Nordea bank data faster.
+Depends: R (>= 3.4.4)
+Imports:
+    readr,
+    dplyr,
+    lubridate,
+    stringr,
+    ggplot2,
+    tidyr,
+    pdftools
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+BugReports: https://github.com/eteppo/finnordear/issues
+URL: https://github.com/eteppo/finnordear, https://eteppo.github.io/finnordear
