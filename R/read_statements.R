@@ -25,7 +25,7 @@ read_statements <- function(directory) {
     ## NOTE: valid identical transactions are lost too in this approach, e.g.,
     ## multiple identical purchases on the same day
     statements <- unique_files %>%
-        purrr::map_dfr(rnordeatools::read_statement) %>%
+        purrr::map_dfr(finnordear::read_statement) %>%
         dplyr::distinct_all()
 
     return(statements)
