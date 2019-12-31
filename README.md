@@ -22,14 +22,12 @@ library(tidyverse)
 ```
 
 ## 3. Read statement files to R
-------------
 
 ``` r
 statements <- read_statements("/path/to/statements/")
 ```
 
 ## 4. Explore and discover useful patterns
--------------
 
 You could start by visualizing your transaction and balance history.
 
