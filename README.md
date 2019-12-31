@@ -2,13 +2,11 @@
 
 **finnordear** is an R toolkit that makes it much easier and faster to analyze Finnish Nordea bank statements (tiliote) in R. See the current features in the [function reference](https://eteppo.github.io/finnordear/).
 
-1. Get bank statements
----------------
+## 1. Get your bank statements
 
 You can download your own data from your Nordea online bank account. You can find statements (Tiliote) under the accounts (Tilit) tab. For now, you'll need to select a range that you're interested in and manually save each pdf-file.
 
-2. Install & load the package
-------------
+## 2. Install & load the package
 
 ``` r
 install.packages("devtools")
@@ -23,14 +21,14 @@ install.packages("tidyverse")
 library(tidyverse)
 ```
 
-3. Read statement files to R
+## 3. Read statement files to R
 ------------
 
 ``` r
 statements <- read_statements("/path/to/statements/")
 ```
 
-4. Explore and discover useful patterns
+## 4. Explore and discover useful patterns
 -------------
 
 You could start by visualizing your transaction and balance history.
@@ -66,3 +64,4 @@ cp_totals <- statements %>%
 View(cp_totals)
 ```
 
+...
